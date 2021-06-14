@@ -6128,8 +6128,8 @@ jukebox.Manager = function(e) {
                     spritemap: {
                         music: {
                             start: 0,
-                            end: 11.125,
-                            loop: !0
+                            end: .502,
+                            loop: !1
                         }
                     }
                 })
