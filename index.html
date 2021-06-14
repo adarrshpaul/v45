@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Happu</title>
+
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=0, minimal-ui"/>
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  
+  <link rel="stylesheet" type="text/css" href="game.css"> 
+  <script type="text/javascript" src="min.js"></script>
+   
+
+</head>
+
+<body onload="setTimeout(window.scrollTo(0,1),1);">
+  
+<script>
+   
+  /* window.onload = chooseContextPic;
+
+var contextPic = new Array("media/graphics/splash/mobile/cover-start-1.jpg","media/graphics/splash/mobile/cover-start-2.jpg");
+
+function chooseContextPic() {
+     var randomNum = Math.floor(Math.random() * contextPic.length);
+     document.getElementById("contextScreen").src = contextPic[randomNum];
+} */
+    
+
+  /* function play() {
+       
+        
+        // Set the name of the "hidden" property and the change event for visibility
+        var hidden, visibilityChange; 
+        if (typeof document.hidden !== "undefined") {
+          hidden = "hidden";
+          visibilityChange = "visibilitychange";
+        } else if (typeof document.mozHidden !== "undefined") { // Firefox up to v17
+          hidden = "mozHidden";
+          visibilityChange = "mozvisibilitychange";
+        } else if (typeof document.webkitHidden !== "undefined") { // Chrome up to v32, Android up to v4.4, Blackberry up to v10
+          hidden = "webkitHidden";
+          visibilityChange = "webkitvisibilitychange";
+        }
+        
+        var audio = document.getElementById("audio");
+        audio.play();
+        audio.volume = 0.07;
+
+        // If the page is hidden, pause the video;
+        // if the page is shown, play the video
+        function handleVisibilityChange() {
+          if (document[hidden]) {
+            audio.pause();
+          } else {
+            audio.play();
+            audio.volume = 0.07;
+          }
+        }
+
+        // Warn if the browser doesn't support addEventListener or the Page Visibility API
+        if (typeof document.addEventListener === "undefined" || typeof document[hidden] === "undefined") {
+          alert("This demo requires a modern browser that supports the Page Visibility API.");
+        } else {
+          // Handle page visibility change   
+          document.addEventListener(visibilityChange, handleVisibilityChange, false);
+            
+         
+        }
+
+    } */
+ 
+    
+    </script>
+ 
+  <div id="ajaxbar">
+    <div id="game"><canvas id="canvas"></canvas></div>
+  
+    <div id="orientate"><img src="media/graphics/orientate/landscape.jpg" /></div>
+    <div id="play" class="play" onclick=""><img src="media/graphics/splash/mobile/cover-start-1.jpg" id="contextScreen"/></div> 
+        <img id="scrollDown" width="220" height="277"></img>
+
+   <!-- <audio id="audio" src="media/audio/music/bgm.mp3" loop= "true"></audio> -->
+
+         
+
+  </div>
+</body>
+</html>
